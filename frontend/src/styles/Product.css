@@ -1,0 +1,10 @@
+.product {
+  width: 300px;
+  padding: 1rem;
+  background: #ffff;
+  box-shadow: 0 1px 4px rbga(0, 0, 0, 0.4);
+  margin: 8px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
