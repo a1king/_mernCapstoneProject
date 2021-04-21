@@ -14,16 +14,12 @@ const Product = () => {
       <p className="info__description">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium,
         pariatur. Optio, tempora velit! Laudantium optio ipsam, doloribus
-        inventore totam quibusdam, asperiores voluptatum ipsum molestiae, itaque
-        assumenda ad vel ullam fuga? Aliquam quae fugit veniam dignissimos eius
-        nesciunt ipsum eum natus excepturi error dolores, harum tenetur illum a
-        saepe obcaecati modi debitis suscipit inventore ipsam fugiat! Deleniti,
-        illo? Quod, officia illo.
+        inventore totam quibusdam, asperiores voluptatum ipsum molestiae.
       </p>
 
       <p className="info__price">499.99</p>
 
-      <Link to={`/product/${1111}`} className="info_button">
+      <Link to={`/product/${1111}`} className="info__button">
         View
       </Link>
     </div>
