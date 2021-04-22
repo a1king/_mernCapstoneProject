@@ -1,7 +1,7 @@
 .sidedrawer {
   width: 70%;
   height: 100vh;
-  background: #ffff;
+  background: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -28,6 +28,11 @@
   align-items: center;
 }
 
+.sidedrawer__links > li > a:hover {
+  background: #333;
+  color: #f4f4f4;
+}
+
 .sidedrawer__links > li > a {
   display: flex;
   align-items: center;
@@ -38,11 +43,6 @@
   text-decoration: none;
   color: #171717;
   font-size: 1.6rem;
-}
-
-.sidedrawer__links > li > a:hover {
-  background: #171717;
-  color: #f4f4f4;
 }
 
 .sidedrawer__links > li > a > span {
@@ -58,18 +58,19 @@
   text-align: center;
   width: 30px;
   height: 30px;
+  background: color #171717;
   border-radius: 50%;
-  background: #f4f4f4;
+  color: #171717;
   font-size: 1rem;
   margin-left: 8px;
 }
 
 .sidedrawer__links > li > a:hover .sidedrawer__cartbadge {
-  background: #f4f4f4;
+  background-color: #f4f4f4;
   color: #171717;
 }
 
-@media (min-width: 1125px) {
+@media (min-width: 960px) {
   .sidedrawer {
     display: none;
   }
