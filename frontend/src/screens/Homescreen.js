@@ -1,6 +1,6 @@
 import "../styles/screens/HomeScreen.css";
 import { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 // Components
 import Product from "../components/Product";
@@ -21,7 +21,6 @@ const HomeScreen = () => {
   return (
     <div className="homescreen">
       <h2 className="homescreen__title">Latest Products</h2>
-
       <div className="homescreen__products">
         {loading ? (
           <h2>Loading...</h2>
