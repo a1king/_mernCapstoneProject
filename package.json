@@ -1,14 +1,13 @@
 {
   "name": "_mernCapStoneProject",
   "version": "1.0.0",
-  "proxy": "http://127.0.0.1:8000",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
     "data:import": "node backend/seederScript.js"
   },
   "keywords": [],
