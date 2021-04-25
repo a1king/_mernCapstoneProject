@@ -22,3 +22,5 @@ const importData = async () => {
 };
 
 importData();
+
+//npm run data:import to refresh new items in db
