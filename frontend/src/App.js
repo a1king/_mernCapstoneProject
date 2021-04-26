@@ -12,6 +12,19 @@ import Navbar from "./components/Navbar";
 import Backdrop from "./components/Backdrop";
 import SideDrawer from "./components/SideDrawer";
 
+fetch("http://localhost:8000/api/products", {
+  method: "GET",
+  headers: {
+    "Content-Type": "application/json",
+  },
+})
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (myJson) {
+    console.log(JSON.stringify(myJson));
+  });
+
 function App() {
   const [sideToggle, setSideToggle] = useState(false);
 
