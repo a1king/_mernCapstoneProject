@@ -12,7 +12,7 @@ import Navbar from "./components/Navbar";
 import Backdrop from "./components/Backdrop";
 import SideDrawer from "./components/SideDrawer";
 
-fetch("api/products", {
+fetch("https://shopcartfms.herokuapp.com/api/products", {
   method: "GET",
   headers: {
     "Content-Type": "application/json",
