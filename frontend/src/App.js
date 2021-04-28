@@ -12,7 +12,7 @@ import Navbar from "./components/Navbar";
 import Backdrop from "./components/Backdrop";
 import SideDrawer from "./components/SideDrawer";
 
-fetch("http://localhost:8000/api/products", {
+fetch("api/products", {
   method: "GET",
   headers: {
     "Content-Type": "application/json",
