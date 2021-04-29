@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Screens
@@ -12,22 +12,23 @@ import Navbar from "./components/Navbar";
 import Backdrop from "./components/Backdrop";
 import SideDrawer from "./components/SideDrawer";
 
-fetch("https://shopcartfms.herokuapp.com/api/products", {
-  method: "GET",
-  headers: {
-    "Content-Type": "application/json",
-  },
-})
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (myJson) {
-    console.log(JSON.stringify(myJson));
-  });
-
 function App() {
   const [sideToggle, setSideToggle] = useState(false);
 
+  // useEffect(() => {
+  //   fetch("/api/products", {
+  //     method: "GET",
+  //     headers: {
+  //       "Content-Type": "",
+  //     },
+  //   })
+  // //     .then(function (response) {
+  // //       return response.json();
+  // //     })
+  // //     .then(function (myJson) {
+  // //       console.log(JSON.stringify(myJson));
+  // //     });
+  // // }, []);
   return (
     <Router>
       <Navbar click={() => setSideToggle(true)} />
