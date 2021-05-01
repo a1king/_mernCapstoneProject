@@ -23,6 +23,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.get("/", (req, res) => {
+  res.redirect("/products");
   res.json({ message: "API running..." });
 });
 
